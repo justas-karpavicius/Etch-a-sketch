@@ -1,0 +1,73 @@
+:root {
+    --grid-rows: 1;
+    --cell-color:  white;
+    --body-bg-color: #171738;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+.main-header {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+#container {
+height: 400px;
+width: 400px;
+display: grid;
+grid-template-rows: repeat(var(--grid-rows), 1fr);
+grid-template-columns: repeat(var(--grid-rows), 1fr);
+
+}
+
+.grid-item {
+    background-color: var(--cell-color);
+}
+
+.etch-a-sketch-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.control-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-div > button , .button-div-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+#black {
+    background-color: black;
+}
+
+#reset {
+    background-color: #DB3A34;
+}
+
+.button-div-button {
+    background-color: black;
+}
+
+.button-div > span {
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+}
